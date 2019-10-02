@@ -16,7 +16,7 @@ export default {
   },
   computed: {
     iconCls () {
-      const classMap = ['decrease', 'discout', 'special', 'invoice', 'guarantee']
+      const classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee']
       return `icon-${this.size} ${classMap[this.type]}`
     }
   }
@@ -35,8 +35,8 @@ export default {
   background-size: 12px 12px
   &.decrease
     bg-image('decrease_1')
-  &.discout
-    bg-image('discout_1')
+  &.discount
+    bg-image('discount_1')
   &.guarantee
     bg-image('guarantee_1')
   &.invoice
@@ -49,8 +49,8 @@ export default {
   background-size: 16px 16px
   &.decrease
     bg-image('decrease_2')
-  &.discout
-    bg-image('discout_2')
+  &.discount
+    bg-image('discount_2')
   &.guarantee
     bg-image('guarantee_2')
   &.invoice
@@ -63,8 +63,8 @@ export default {
   background-size: 12px 12px
   &.decrease
     bg-image('decrease_3')
-  &.discout
-    bg-image('discout_3')
+  &.discount
+    bg-image('discount_3')
   &.guarantee
     bg-image('guarantee_3')
   &.invoice
@@ -77,8 +77,8 @@ export default {
   background-size: 16px 16px
   &.decrease
     bg-image('decrease_4')
-  &.discout
-    bg-image('discout_4')
+  &.discount
+    bg-image('discount_4')
   &.guarantee
     bg-image('guarantee_4')
   &.invoice

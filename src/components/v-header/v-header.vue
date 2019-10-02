@@ -24,12 +24,13 @@
       <div class="support-count"
            v-if="seller.supports">
         <span class="count">{{seller.supports.length}}个</span>
-        <i class="icon-keyboard-arrow-right"></i>
+        <i class="icon-keyboard_arrow_right"></i>
       </div>
     </div>
-    <div class="bulletin-warpper">
-      <span class="bulletin-title"><span class="bulletin-text">{{seller.bulletin}}</span>
-        <i class="icon-keyboard_arrow_right"></i></span>
+    <div class="bulletin-wrapper">
+      <span class="bulletin-title"></span>
+      <span class="bulletin-text">{{seller.bulletin}}</span>
+      <i class="icon-keyboard_arrow_right"></i>
     </div>
     <div class="background">
       <img :src="seller.avatar"
@@ -122,38 +123,38 @@ export default {
         margin-left: 2px
         line-height: 24px
         font-size: $fonsize-small-s
-    .bulletin-wrapper
-      position: relative
-      display: flex
-      align-items: center
-      height: 28px
-      line-height: 28px
-      padding: 0 8px
-      background: $color-background-sss
-      .bulletin-title
-        flex: 0 0 22px
-        width: 22px
-        height: 12px
-        margin-right: 4px
-        bg-image('bulletin')
-        background-size: 22px 12px
-        background-repeat: no-repeat
-      .bulletin-text
-        flex: 1
-        white-space: nowrap
-        overflow: hidden
-        text-overflow: ellipsis
-        font-size: $fontsize-small-s
-      .icon-keyboard_arrow_right
-        flex: 1
-        width: 10px
-        font-size: $fontsize-small-s
-    .background
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      z-index: -1
-      filter: blur(10px)
+  .bulletin-wrapper
+    position: relative
+    display: flex
+    align-items: center
+    height: 28px
+    line-height: 28px
+    padding: 0 8px
+    background: $color-background-sss
+    .bulletin-title
+      flex: 0 0 22px
+      width: 22px
+      height: 12px
+      margin-right: 4px
+      bg-image('bulletin')
+      background-size: 22px 12px
+      background-repeat: no-repeat
+    .bulletin-text
+      flex: 1
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      font-size: $fontsize-small-s
+    .icon-keyboard_arrow_right
+      flex: 0 0 10px
+      width: 10px
+      font-size: $fontsize-small-s
+  .background
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    filter: blur(10px)
 </style>
