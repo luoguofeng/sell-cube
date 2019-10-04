@@ -1,6 +1,8 @@
 <template>
-  <span class="support-ico"
-        :class="iconCls"></span>
+  <span
+    class="support-ico"
+    :class="iconCls"
+  ></span>
 </template>
 
 <script>
